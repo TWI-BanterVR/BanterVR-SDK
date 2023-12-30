@@ -1,0 +1,19 @@
+{
+  "name": "com.bantervr.sdk",
+  "version": "0.0.2",
+  "displayName": "BanterVR SDK",
+  "description": "SDK package for BanterVR",
+  "unity": "2021.3",
+  "unityRelease": "6f1",
+  "documentationUrl": "https://bantervr.com/build-with-unity",
+  "dependencies": {
+    "com.unity.cinemachine": "2.8.9",
+	"com.unity.textmeshpro": "3.0.6",
+	"com.unity.xr.management": "4.2.1",
+	"com.unity.xr.oculus": "3.0.2"
+ },
+  "author": {
+    "name": "BanterVR",
+    "url": "https://discord.com/invite/bantaverse"
+  }
+}

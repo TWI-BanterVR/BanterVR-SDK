@@ -1,0 +1,69 @@
+.droparea {
+
+    position: relative;
+
+    padding-top: 40%;
+    
+    top: 0px;
+
+    left: 0px;
+
+    bottom: 20px;
+
+    right: 20px;
+    background-image: url('./Banner.png');
+
+}
+.build-button{
+    position: relative;
+
+    width: 200px;
+
+    height: 60px;
+
+    margin: 5px;
+}
+
+.toggle-box{
+    
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.horizontal-no-stretch{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    align-items: left;   
+    justify-content: left;
+    flex-shrink: 0;
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    align-items: stretch;   
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.warning-title{
+    margin: 5px;
+    font-size: 16px;
+}
+
+.warning-list{
+    color: yellow;
+    margin: 5px;
+}
+
+.scene-title{
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.scene-name{
+    margin: 5px;
+    margin-bottom: 10px;
+}
