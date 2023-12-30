@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 
 public class URPToBuiltIn : EditorWindow
 {
+	private const string packageName = "com.bantervr.sdk";
+	
     // Options to select shader
     private string[] options = new string[] { "Standard", "Mobile/Diffuse" };
     private int selectedIndex = 0;
@@ -16,7 +18,7 @@ public class URPToBuiltIn : EditorWindow
     }
 
     public void OnEnable() {
-        rootVisualElement.styleSheets.Add(AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/BanterUnitySDK/Editor/dnd.uss"));
+        rootVisualElement.styleSheets.Add(AssetDatabase.LoadAssetAtPath<StyleSheet>($"Packages/{packageName}/Editor/dnd.uss"));
         var container = new VisualElement();
         // var toggleContainer = new VisualElement();
 

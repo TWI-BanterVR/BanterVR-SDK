@@ -10,6 +10,8 @@ using System.Xml.Linq;
 
 public class BanterBuilderWindow : EditorWindow
 {
+	private const string packageName = "com.bantervr.sdk";
+	
     private string scenePath;
     private BuildTarget[] buildTargets = new BuildTarget[] { BuildTarget.Android, BuildTarget.StandaloneWindows };
     private bool[] buildTargetFlags = new bool[] { true, true };
@@ -38,7 +40,7 @@ public class BanterBuilderWindow : EditorWindow
         // UnityEditor.PackageManager.Client.Add("com.unity.xr.management");
         // UnityEditor.PackageManager.Client.Add("com.unity.xr.oculus");
         // PlayerSettings.stereoRenderingPath = StereoRenderingPath.SinglePass;
-        rootVisualElement.styleSheets.Add(AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/BanterUnitySDK/Editor/dnd.uss"));
+        rootVisualElement.styleSheets.Add(AssetDatabase.LoadAssetAtPath<StyleSheet>($"Packages/{packageName}/Editor/dnd.uss"));
         SetupDropArea();
         SetupOptions();
     }
